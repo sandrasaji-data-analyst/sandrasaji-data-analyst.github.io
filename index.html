@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sandra Saji - Aspiring Data Analyst Portfolio">
+    <title>Sandra Saji | Data Analyst Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Devicon Library for Official Tech Logos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Full-Page Interactive Data Particle Network -->
+    <canvas id="dataCanvas"></canvas>
+
+    <div class="scroll-progress" id="scrollProgress"></div>
+    <div class="page-glow page-glow-one"></div>
+    <div class="page-glow page-glow-two"></div>
+    <div class="page-glow page-glow-three"></div>
+
+    <!-- NAVIGATION -->
+    <header class="site-header" id="siteHeader">
+        <nav class="navbar container">
+            <a href="#home" class="logo">Sandra<span>.</span></a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#resume" class="nav-link">Resume</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HOME / HERO -->
+        <section class="hero section" id="home">
+            <div class="container hero-layout">
+
+                <div class="hero-content reveal">
+                    <span class="eyebrow">
+                        <span class="status-dot"></span>
+                        ASPIRING DATA ANALYST
+                    </span>
+
+                    <h1>Hello, I'm<br>
+                        <span class="gradient-text">Sandra Saji</span>
+                    </h1>
+
+                    <h2 class="hero-role">
+                        Data-driven <span id="changingWord">Problem Solver</span>
+                    </h2>
+
+                    <p class="hero-description">
+                        I enjoy transforming raw data into meaningful insights.
+                        Exploring patterns, understanding business problems and
+                        presenting information through clear, insightful
+                        visualizations.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            Explore My Work <span>↗</span>
+                        </a>
+                        <a href="SANDRA_SAJI_RESUME-17.pdf" class="btn btn-outline" download>
+                            Download Resume ↓
+                        </a>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com/sandrasaji-data-analyst" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                        <a href="https://www.linkedin.com/in/-sandra-saji/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+                        <a href="mailto:sajisandra522@gmail.com">Email ↗</a>
+                    </div>
+                </div>
+
+                <!-- PROFILE IMAGE AND ANIMATED DATA GRAPHICS -->
+                <div class="hero-visual reveal">
+
+                    <div class="hero-orbit orbit-one"></div>
+                    <div class="hero-orbit orbit-two"></div>
+                    <div class="hero-orbit orbit-three"></div>
+
+                    <!-- Animated SVG Radar Grid Behind Portrait -->
+                    <svg class="hero-radar-svg" viewBox="0 0 360 360" fill="none" aria-hidden="true">
+                        <circle cx="180" cy="180" r="145" stroke="rgba(246,155,92,0.18)" stroke-width="1" stroke-dasharray="6 6"/>
+                        <circle cx="180" cy="180" r="110" stroke="rgba(232,107,44,0.22)" stroke-width="1.2"/>
+                        <line x1="180" y1="20" x2="180" y2="340" stroke="rgba(246,155,92,0.12)" stroke-width="1"/>
+                        <line x1="20" y1="180" x2="340" y2="180" stroke="rgba(246,155,92,0.12)" stroke-width="1"/>
+                        <circle cx="180" cy="35" r="4" fill="#E86B2C"/>
+                        <circle cx="325" cy="180" r="4" fill="#F69B5C"/>
+                        <circle cx="180" cy="325" r="4" fill="#E86B2C"/>
+                        <circle cx="35" cy="180" r="4" fill="#F69B5C"/>
+                    </svg>
+
+                    <div class="data-float data-float-one">
+                        <span class="float-icon">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                        </span>
+                        <div>
+                            <strong>Data Analysis</strong>
+                            <small>Discover patterns</small>
+                        </div>
+                    </div>
+
+                    <div class="data-float data-float-two">
+                        <span class="float-icon">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                        </span>
+                        <div>
+                            <strong>Visualization</strong>
+                            <small>Present insights</small>
+                        </div>
+                    </div>
+
+                    <div class="data-float data-float-three">
+                        <span class="float-icon">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                        </span>
+                        <div>
+                            <strong>Problem Solving</strong>
+                            <small>Think with data</small>
+                        </div>
+                    </div>
+
+                    <div class="hero-image-wrap">
+                        <div class="hero-image-glow"></div>
+                        <img src="img.png" alt="Sandra Saji" class="hero-photo">
+                    </div>
+
+                    <div class="hero-bottom-note">
+                        <span class="note-line"></span>
+                        <span>Curious mind. Analytical thinking.</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="hero-scroll">
+                <span></span>
+                SCROLL TO EXPLORE
+            </div>
+        </section>
+
+        <!-- KINETIC DATA TICKER BANNER -->
+        <div class="data-ticker" aria-hidden="true">
+            <div class="ticker-track">
+                <span>PYTHON</span><i>✦</i>
+                <span>POWER BI</span><i>✦</i>
+                <span>SQL & MYSQL</span><i>✦</i>
+                <span>DAX MEASURES</span><i>✦</i>
+                <span>PANDAS & NUMPY</span><i>✦</i>
+                <span>EXPLORATORY DATA ANALYSIS</span><i>✦</i>
+                <span>DATA VISUALIZATION</span><i>✦</i>
+                <span>MICROSOFT EXCEL</span><i>✦</i>
+                <span>STATISTICAL MODELING</span><i>✦</i>
+                <!-- Duplicate for seamless infinite scroll -->
+                <span>PYTHON</span><i>✦</i>
+                <span>POWER BI</span><i>✦</i>
+                <span>SQL & MYSQL</span><i>✦</i>
+                <span>DAX MEASURES</span><i>✦</i>
+                <span>PANDAS & NUMPY</span><i>✦</i>
+                <span>EXPLORATORY DATA ANALYSIS</span><i>✦</i>
+                <span>DATA VISUALIZATION</span><i>✦</i>
+                <span>MICROSOFT EXCEL</span><i>✦</i>
+                <span>STATISTICAL MODELING</span><i>✦</i>
+            </div>
+        </div>
+
+        <!-- ABOUT -->
+        <section class="section about-section" id="about">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-tag">GET TO KNOW ME</span>
+                    <h2>About <span class="gradient-text">Me</span></h2>
+                    <p>A little about my journey into data analytics.</p>
+                </div>
+
+                <div class="about-layout">
+
+                    <div class="about-card tilt-card reveal">
+                        <div class="about-mark">01</div>
+                        <h3>Turning Data Into Understanding</h3>
+
+                        <p>
+                            I am an aspiring Data Analyst with an academic
+                            background in Electronics and Communication
+                            Engineering and practical training in Python
+                            Data Analytics with Power BI.
+                        </p>
+
+                        <p>
+                            I am interested in exploring datasets, identifying
+                            patterns, preparing data and communicating findings
+                            through meaningful visualizations.
+                        </p>
+
+                        <p>
+                            My goal is to begin my career as a Data Analyst,
+                            continue improving my analytical skills and
+                            contribute to solving real-world business problems
+                            using data-driven insights.
+                        </p>
+
+                        <!-- Animated Mini Data Waveform Graphic -->
+                        <div class="about-wave-graphic" aria-hidden="true">
+                            <span></span><span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span><span></span>
+                        </div>
+                    </div>
+
+                    <div class="about-side reveal">
+                        <div class="about-mini-card tilt-card">
+                            <span class="mini-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                            </span>
+                            <div>
+                                <h4>Analytical Thinking</h4>
+                                <p>Exploring information and finding patterns.</p>
+                            </div>
+                        </div>
+
+                        <div class="about-mini-card tilt-card">
+                            <span class="mini-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+                            </span>
+                            <div>
+                                <h4>Data Visualization</h4>
+                                <p>Communicating insights through dashboards.</p>
+                            </div>
+                        </div>
+
+                        <div class="about-mini-card tilt-card">
+                            <span class="mini-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+                            </span>
+                            <div>
+                                <h4>Continuous Learning</h4>
+                                <p>Developing practical technical skills.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- TECHNICAL SKILLS WITH OFFICIAL LOGOS -->
+        <section class="section skills-section" id="skills">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-tag">WHAT I WORK WITH</span>
+                    <h2>Technical <span class="gradient-text">Skills</span></h2>
+                    <p>Tools and technologies I use to explore and understand data.</p>
+                </div>
+
+                <div class="skills-grid">
+
+                    <!-- 1. Python Logo -->
+                    <article class="skill-card tilt-card reveal">
+                        <div class="skill-logo-box">
+                            <i class="devicon-python-plain colored"></i>
+                        </div>
+                        <h3>Python</h3>
+                        <p>Data analysis and scripting</p>
+                        <div class="skill-line"><span style="--level:85%"></span></div>
+                    </article>
+
+                    <!-- 2. SQL Logo -->
+                    <article class="skill-card tilt-card reveal">
+                        <div class="skill-logo-box">
+                            <i class="devicon-azuresqldatabase-plain colored"></i>
+                        </div>
+                        <h3>SQL</h3>
+                        <p>Querying and data retrieval</p>
+                        <div class="skill-line"><span style="--level:80%"></span></div>
+                    </article>
+
+                    <!-- 3. Microsoft Excel Official SVG Logo -->
+                    <article class="skill-card tilt-card reveal">
+                        <div class="skill-logo-box">
+                            <svg viewBox="0 0 48 48" width="36" height="36" aria-label="Excel Logo">
+                                <path fill="#185C37" d="M28,6H14c-1.1,0-2,0.9-2,2v8l16,10l12-6V8c0-1.1-0.9-2-2-2H28z"/>
+                                <path fill="#21A366" d="M12,16h16v10H12V16z"/>
+                                <path fill="#107C41" d="M12,26h16v14c0,1.1-0.9,2-2,2H14c-1.1,0-2-0.9-2-2V26z"/>
+                                <path fill="#33C481" d="M28,16h12v10H28V16z"/>
+                                <path fill="#185C37" d="M28,26h12v14c0,1.1-0.9,2-2,2H28V26z"/>
+                                <rect x="6" y="14" width="20" height="20" rx="2" fill="#107C41"/>
+                                <path fill="#FFF" d="M11.5,29l3.3-5.2L11.8,19h2.6l1.8,3.2l1.8-3.2h2.5l-3,4.8l3.2,5.2h-2.6l-2-3.5l-2,3.5H11.5z"/>
+                            </svg>
+                        </div>
+                        <h3>Excel</h3>
+                        <p>Data analysis and reporting</p>
+                        <div class="skill-line"><span style="--level:85%"></span></div>
+                    </article>
+
+                    <!-- 4. Power BI Official SVG Logo -->
+                    <article class="skill-card tilt-card reveal">
+                        <div class="skill-logo-box">
+                            <svg viewBox="0 0 48 48" width="36" height="36" aria-label="Power BI Logo">
+                                <rect x="27" y="6" width="9" height="36" rx="2" fill="#E6AD10"/>
+                                <rect x="19" y="15" width="9" height="27" rx="2" fill="#F6D751"/>
+                                <rect x="11" y="24" width="9" height="18" rx="2" fill="#F9E589"/>
+                            </svg>
+                        </div>
+                        <h3>Power BI</h3>
+                        <p>Interactive dashboards</p>
+                        <div class="skill-line"><span style="--level:85%"></span></div>
+                    </article>
+
+                    <!-- 5. DAX Custom Vector Logo -->
+                    <article class="skill-card tilt-card reveal">
+                        <div class="skill-logo-box">
+                            <svg viewBox="0 0 48 48" width="36" height="36" aria-label="DAX Logo">
+                                <rect x="6" y="6" width="36" height="36" rx="8" fill="rgba(246,155,92,0.16)" stroke="#F69B5C" stroke-width="2"/>
+                                <text x="24" y="29" text-anchor="middle" fill="#F6D751" font-family="Outfit, sans-serif" font-weight="800" font-size="13">DAX</text>
+                            </svg>
+                        </div>
+                        <h3>DAX</h3>
+                        <p>Measures and calculations</p>
+                        <div class="skill-line"><span style="--level:75%"></span></div>
+                    </article>
+
+                    <!-- 6. Pandas Official Logo -->
+                    <article class="skill-card tilt-card reveal">
+                        <div class="skill-logo-box">
+                            <i class="devicon-pandas-plain colored"></i>
+                        </div>
+                        <h3>Pandas</h3>
+                        <p>Data manipulation</p>
+                        <div class="skill-line"><span style="--level:85%"></span></div>
+                    </article>
+
+                    <!-- 7. NumPy Official Logo -->
+                    <article class="skill-card tilt-card reveal">
+                        <div class="skill-logo-box">
+                            <i class="devicon-numpy-plain colored"></i>
+                        </div>
+                        <h3>NumPy</h3>
+                        <p>Numerical computing</p>
+                        <div class="skill-line"><span style="--level:75%"></span></div>
+                    </article>
+
+                    <!-- 8. MySQL Official Logo -->
+                    <article class="skill-card tilt-card reveal">
+                        <div class="skill-logo-box">
+                            <i class="devicon-mysql-original colored"></i>
+                        </div>
+                        <h3>MySQL</h3>
+                        <p>Database management</p>
+                        <div class="skill-line"><span style="--level:80%"></span></div>
+                    </article>
+
+                    <!-- 9. EDA Vector Graphic Logo -->
+                    <article class="skill-card tilt-card reveal">
+                        <div class="skill-logo-box">
+                            <svg viewBox="0 0 48 48" width="36" height="36" fill="none" aria-label="EDA Logo">
+                                <circle cx="21" cy="21" r="12" stroke="#F69B5C" stroke-width="3"/>
+                                <line x1="30" y1="30" x2="41" y2="41" stroke="#E86B2C" stroke-width="3.5" stroke-linecap="round"/>
+                                <polyline points="15,24 19,19 23,22 27,16" stroke="#FFB477" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>EDA</h3>
+                        <p>Exploratory data analysis</p>
+                        <div class="skill-line"><span style="--level:85%"></span></div>
+                    </article>
+
+                    <!-- 10. Data Cleaning Vector Graphic Logo -->
+                    <article class="skill-card tilt-card reveal">
+                        <div class="skill-logo-box">
+                            <svg viewBox="0 0 48 48" width="36" height="36" fill="none" aria-label="Data Cleaning Logo">
+                                <polygon points="8,10 40,10 28,25 28,37 20,40 20,25" stroke="#F69B5C" stroke-width="2.6" stroke-linejoin="round" fill="rgba(232,107,44,0.14)"/>
+                                <circle cx="37" cy="33" r="2" fill="#FFB477"/>
+                                <circle cx="33" cy="39" r="1.5" fill="#F69B5C"/>
+                            </svg>
+                        </div>
+                        <h3>Data Cleaning</h3>
+                        <p>Preparing quality data</p>
+                        <div class="skill-line"><span style="--level:85%"></span></div>
+                    </article>
+
+                    <!-- 11. Data Visualization Vector Graphic Logo -->
+                    <article class="skill-card tilt-card reveal">
+                        <div class="skill-logo-box">
+                            <svg viewBox="0 0 48 48" width="36" height="36" fill="none" aria-label="Visualization Logo">
+                                <rect x="8" y="24" width="6" height="14" rx="2" fill="#E86B2C"/>
+                                <rect x="18" y="16" width="6" height="22" rx="2" fill="#F69B5C"/>
+                                <rect x="28" y="20" width="6" height="18" rx="2" fill="#FFB477"/>
+                                <polyline points="11,18 21,10 31,14 40,8" stroke="#F5F3F2" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="40" cy="8" r="2.5" fill="#E86B2C"/>
+                            </svg>
+                        </div>
+                        <h3>Visualization</h3>
+                        <p>Communicating insights</p>
+                        <div class="skill-line"><span style="--level:85%"></span></div>
+                    </article>
+
+                    <!-- 12. Statistics Gaussian Curve Logo -->
+                    <article class="skill-card tilt-card reveal">
+                        <div class="skill-logo-box">
+                            <svg viewBox="0 0 48 48" width="36" height="36" fill="none" aria-label="Statistics Logo">
+                                <line x1="6" y1="36" x2="42" y2="36" stroke="#A89E99" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M8,35 C14,35 17,12 24,12 C31,12 34,35 40,35" stroke="#F69B5C" stroke-width="3" stroke-linecap="round" fill="rgba(232,107,44,0.16)"/>
+                                <line x1="24" y1="12" x2="24" y2="36" stroke="#E86B2C" stroke-width="1.8" stroke-dasharray="3 3"/>
+                            </svg>
+                        </div>
+                        <h3>Statistics</h3>
+                        <p>Understanding data patterns</p>
+                        <div class="skill-line"><span style="--level:70%"></span></div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="section projects-section" id="projects">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-tag">MY WORK</span>
+                    <h2>Featured <span class="gradient-text">Projects</span></h2>
+                    <p>Exploring data and transforming it into meaningful insights.</p>
+                </div>
+
+                <div class="projects-showcase">
+
+                    <!-- PROJECT 1 -->
+                    <article class="project-showcase-card tilt-card reveal">
+
+                        <div class="project-visual sales-visual">
+
+                            <div class="visual-heading">
+                                <span>GLOBAL SUPERSTORE</span>
+                                <span class="visual-dot"></span>
+                            </div>
+
+                            <div class="sales-dashboard">
+                                <div class="sales-kpi-row">
+                                    <div class="sales-kpi">
+                                        <span>FOCUS</span>
+                                        <strong>Sales</strong>
+                                    </div>
+                                    <div class="sales-kpi">
+                                        <span>FOCUS</span>
+                                        <strong>Profit</strong>
+                                    </div>
+                                    <div class="sales-kpi">
+                                        <span>FOCUS</span>
+                                        <strong>Regions</strong>
+                                    </div>
+                                </div>
+
+                                <div class="sales-chart">
+                                    <div class="chart-label">Sales Performance Analysis</div>
+                                    <div class="sales-bars">
+                                        <i style="--bar:35%"></i>
+                                        <i style="--bar:58%"></i>
+                                        <i style="--bar:45%"></i>
+                                        <i style="--bar:78%"></i>
+                                        <i style="--bar:62%"></i>
+                                        <i style="--bar:90%"></i>
+                                        <i style="--bar:72%"></i>
+                                        <i style="--bar:100%"></i>
+                                    </div>
+                                </div>
+
+                                <div class="sales-bottom">
+                                    <div class="donut-chart"></div>
+                                    <div class="chart-legend">
+                                        <span>● Sales analysis</span>
+                                        <span>● Profit analysis</span>
+                                        <span>● Regional trends</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <span class="visual-caption">SALES & BUSINESS ANALYTICS</span>
+                        </div>
+
+                        <div class="project-content">
+                            <span class="project-label">PROJECT 01</span>
+
+                            <h3>Global Superstore Sales Performance Analysis</h3>
+
+                            <p>
+                                An exploratory data analysis project focused on
+                                understanding sales performance, profitability,
+                                product categories and regional business trends.
+                            </p>
+
+                            <div class="project-tools">
+                                <span>Python</span>
+                                <span>Pandas</span>
+                                <span>Excel</span>
+                                <span>Power BI</span>
+                            </div>
+
+                            <a href="https://github.com/sandrasaji-data-analyst/global-superstore-sales-performance" target="_blank" rel="noopener noreferrer" class="project-link">
+                                View Project on GitHub <span>↗</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 2 -->
+                    <article class="project-showcase-card tilt-card reveal">
+
+                        <div class="project-visual ev-visual">
+
+                            <div class="visual-heading">
+                                <span>EV CHARGING ANALYSIS</span>
+                                <span class="visual-dot"></span>
+                            </div>
+
+                            <div class="ev-dashboard">
+                                <div class="ev-kpi-row">
+                                    <div class="ev-kpi">
+                                        <span class="ev-icon">ϟ</span>
+                                        <div><strong>Charging</strong><small>Sessions</small></div>
+                                    </div>
+                                    <div class="ev-kpi">
+                                        <span class="ev-icon">◉</span>
+                                        <div><strong>Energy</strong><small>Consumption</small></div>
+                                    </div>
+                                    <div class="ev-kpi">
+                                        <span class="ev-icon">↗</span>
+                                        <div><strong>Usage</strong><small>Patterns</small></div>
+                                    </div>
+                                </div>
+
+                                <div class="ev-chart">
+                                    <div class="chart-label">Charging Activity</div>
+                                    <div class="ev-chart-bars">
+                                        <i style="--bar:40%"></i>
+                                        <i style="--bar:65%"></i>
+                                        <i style="--bar:48%"></i>
+                                        <i style="--bar:82%"></i>
+                                        <i style="--bar:60%"></i>
+                                        <i style="--bar:95%"></i>
+                                    </div>
+                                </div>
+
+                                <div class="charging-stations">
+                                    <div class="charging-unit">
+                                        <div class="station-top"></div>
+                                        <div class="station-body"><span>ϟ</span></div>
+                                        <div class="station-base"></div>
+                                    </div>
+                                    <div class="charging-unit">
+                                        <div class="station-top"></div>
+                                        <div class="station-body"><span>ϟ</span></div>
+                                        <div class="station-base"></div>
+                                    </div>
+                                    <div class="charging-unit">
+                                        <div class="station-top"></div>
+                                        <div class="station-body"><span>ϟ</span></div>
+                                        <div class="station-base"></div>
+                                    </div>
+                                    <div class="charging-unit">
+                                        <div class="station-top"></div>
+                                        <div class="station-body"><span>ϟ</span></div>
+                                        <div class="station-base"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <span class="visual-caption">EV & ENERGY ANALYTICS</span>
+                        </div>
+
+                        <div class="project-content">
+                            <span class="project-label">PROJECT 02</span>
+
+                            <h3>EV Charging Analysis Dashboard</h3>
+
+                            <p>
+                                An electric vehicle charging analysis project
+                                exploring charging behaviour, energy consumption,
+                                charging costs, session duration and station usage.
+                            </p>
+
+                            <div class="project-tools">
+                                <span>Power BI</span>
+                                <span>DAX</span>
+                                <span>Excel</span>
+                                <span>Data Analysis</span>
+                            </div>
+
+                            <a href="https://github.com/sandrasaji-data-analyst/ev-charging-analysis-dashboard" target="_blank" rel="noopener noreferrer" class="project-link">
+                                View Project on GitHub <span>↗</span>
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section class="section education-section" id="education">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-tag">MY BACKGROUND</span>
+                    <h2>Education & <span class="gradient-text">Training</span></h2>
+                    <p>My academic foundation and professional learning journey.</p>
+                </div>
+
+                <div class="timeline">
+
+                    <article class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-card tilt-card">
+                            <span class="timeline-date">2025 – 2026</span>
+                            <h3>Python Data Analytics with Power BI</h3>
+                            <h4>Luminar Technolab, Kochi</h4>
+                            <p>Six months of practical training in Python,
+                               data analytics and Power BI.</p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-card tilt-card">
+                            <span class="timeline-date">2021 – 2025</span>
+                            <h3>B.Tech – Electronics and Communication Engineering</h3>
+                            <h4>Sree Buddha College of Engineering, Alappuzha</h4>
+                            <p>CGPA: 7.11 / 10</p>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="certification-card tilt-card reveal">
+                    <span class="cert-icon">✦</span>
+                    <div>
+                        <span class="section-tag">CERTIFICATION</span>
+                        <h3>Python Data Analytics with Power BI</h3>
+                        <p>National Council for Technology and Training (NACTET)</p>
+                        <span class="grade-label">Grade A+</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- RESUME -->
+        <section class="section resume-section" id="resume">
+            <div class="container">
+
+                <div class="resume-card tilt-card reveal">
+                    <div class="resume-orbit-ring" aria-hidden="true"></div>
+                    <span class="section-tag">MY EXPERIENCE & SKILLS</span>
+
+                    <h2>Interested in my <span class="gradient-text">profile?</span></h2>
+
+                    <p>
+                        Explore my resume to learn more about my education,
+                        skills, training and projects.
+                    </p>
+
+                    <a href="SANDRA_SAJI_RESUME-17.pdf" class="btn btn-primary" download>
+                        Download My Resume ↓
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-tag">LET'S CONNECT</span>
+                    <h2>Get In <span class="gradient-text">Touch</span></h2>
+                    <p>Have an opportunity or want to connect? I'd love to hear from you.</p>
+                </div>
+
+                <div class="contact-layout">
+
+                    <div class="contact-info reveal">
+                        <h3>Let's start a conversation.</h3>
+                        <p>
+                            I'm looking forward to starting my career in data
+                            analytics and connecting with people who share an
+                            interest in data and technology.
+                        </p>
+
+                        <a href="mailto:sajisandra522@gmail.com" class="contact-item">
+                            <span>✉</span>
+                            <div>
+                                <small>Email</small>
+                                <strong>sajisandra522@gmail.com</strong>
+                            </div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/-sandra-saji/" target="_blank" rel="noopener noreferrer" class="contact-item">
+                            <span>in</span>
+                            <div>
+                                <small>LinkedIn</small>
+                                <strong>Connect with me</strong>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/sandrasaji-data-analyst" target="_blank" rel="noopener noreferrer" class="contact-item">
+                            <span>⌘</span>
+                            <div>
+                                <small>GitHub</small>
+                                <strong>Explore my repositories</strong>
+                            </div>
+                        </a>
+                    </div>
+
+                    <form class="contact-form reveal" id="contactForm" action="https://formspree.io/f/mrpqlonn" method="POST">
+                        <label for="visitorName">Your Name</label>
+                        <input type="text" id="visitorName" name="name" placeholder="Enter your name" required>
+
+                        <label for="visitorEmail">Your Email</label>
+                        <input type="email" id="visitorEmail" name="email" placeholder="Enter your email" required>
+
+                        <label for="visitorMessage">Message</label>
+                        <textarea id="visitorMessage" name="message" rows="5" placeholder="Write your message..." required></textarea>
+
+                        <button type="submit" class="btn btn-primary">
+                            Send Message <span>↗</span>
+                        </button>
+
+                        <p class="form-note" id="formStatus">
+                            Your message will be sent directly to my inbox.
+                        </p>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <a href="#home" class="logo">Sandra<span>.</span></a>
+
+            <p>Designed with curiosity and a passion for data.</p>
+
+            <span>© <span id="currentYear"></span> Sandra Saji. All rights reserved.</span>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
